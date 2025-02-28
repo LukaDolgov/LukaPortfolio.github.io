@@ -35,3 +35,14 @@
     margin-left: 10px; 
     font-family: 'Courier New', Courier, monospace;
   }
+  .replay-button {
+    position: absolute;
+    top: 2vh;  
+    right: 2vw; 
+    cursor: pointer;
+    color: #fff;
+    text-decoration: underline;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+  }

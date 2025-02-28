@@ -32,19 +32,39 @@ let c4O = "cat: portfolio_projects: Is a directory";
 
 //logic
 const Terminal = () => {
-  const commands = useMemo(() => [c1, c2, c3, c4], []);
+  const [commands, setCommands] = useState([c1, c2, c3, c4]);
   const content = useMemo(() => [c1O, c2O, c3O, c4O], []);
-
-  // This index tracks the command that is currently being printed.
   const [currIndex, setCurrIndex] = useState(0);
+  const [showExtra, setShowExtra] = useState(false);
+  // This index tracks the command that is currently being printed.
   const handleCommandComplete = () => {
     if (currIndex < commands.length - 1) {
       setCurrIndex(prev => prev + 1);
+    } else {
+      if (commands[currIndex] !== "clear") {
+        setShowExtra(true);
+      }
+    }
+  };
+  const handleReset = () => {
+    // Clear the extra flag and reset state when the reset button is clicked.
+    setShowExtra(false);
+    if (currIndex === commands.length - 1) {
+      setCommands(prevCommands => [...prevCommands, "clear"]);
+      setCurrIndex(prev => prev + 1);
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
     }
   };
 
   return (
     <div className="terminal">
+      <p className="replay-button"
+        onClick={handleReset} 
+      >
+        Replay Animations
+      </p>
       {
         commands.slice(0, currIndex + 1).map((command, i) => (
           <CommandLine
@@ -54,10 +74,20 @@ const Terminal = () => {
             delayBefore={1000} 
             speed={50}
             onComplete={i === currIndex ? handleCommandComplete : undefined}
-            active={i === currIndex} 
+            active={ showExtra ? false : i === currIndex }
           />
         ))
       }
+       {showExtra  && (
+      <CommandLine
+        key="blank"
+        command=""     
+        content=""     
+        delayBefore={1000}
+        speed={50}
+        active={true}  
+      />
+    )}
     </div>
   );
 };
