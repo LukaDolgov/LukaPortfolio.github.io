@@ -1,0 +1,18 @@
+.command-line {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255); 
+    margin: 0;
+  }
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255); 
+    margin: 0;
+}
+.user-info {
+    color: #09b309;  
+  }
+  
+  .directory {
+    color: #2f2ffb;  
+  }
+  
