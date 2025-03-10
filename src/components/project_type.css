@@ -1,0 +1,60 @@
+/* Container for the entire project block */
+.project_span {
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; /* Center the header text */
+  }
+  
+  /* Project header styling */
+  .project_head {
+    color: white; /* Terminal green */
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Container for image and description row */
+  .project_content {
+    display: flex;
+    justify-content: center; /* Center the row horizontally */
+    align-items: flex-start;
+    gap: 20px; /* Space between image and description */
+    margin: 0 auto;
+    max-width: 800px;  /* Adjust to control overall width */
+  }
+  
+  /* Container for the image and its caption */
+  .project_figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Project image styling: slightly smaller size */
+  .project_gif {
+    margin-top: 10px;
+    max-width: 500px;  
+    width: 100%;
+    height: auto;
+    border: 1px dashed white;
+    background: #000;
+  }
+  
+
+  .project_caption {
+    text-align: center;
+    font-size: 0.9em;
+    color: white;
+    margin-top: 5px;
+  }
+  
+
+  .project_desc {
+    flex: 1;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: 1px dashed white;
+    line-height: 1.5;
+    align-self: center;
+  }
+  

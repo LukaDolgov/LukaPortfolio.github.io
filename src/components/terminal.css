@@ -37,9 +37,9 @@
     font-family: 'Courier New', Courier, monospace;
   }
   .replay-button {
-    position: absolute;
+    position: fixed;
     top: 2vh;  
-    right: 2vw; 
+    right: 2.5vw; 
     cursor: pointer;
     color: #fff;
     text-decoration: underline;
@@ -47,6 +47,23 @@
     border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
   }
+  .download-button {
+    position: fixed;
+    top: 6vh;
+    right: 2vw;
+    padding: 10px 15px;
+    background-color: #000;
+    color: white;
+    border: 1px dashed white;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    z-index: 1000;
+    text-decoration: none;
+  }
+
+
+
+
   /* for mobile */
   @media (max-width: 600px) {
     .replay-button {
@@ -55,3 +72,13 @@
       font-size: 0.8em; 
     }
   }
+  #portfolio_info_desc {
+    white-space: pre-wrap;
+    margin: 20px auto;
+    padding: 10px;  
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px dashed white;
+    max-width: 500px;  
+  }
+  
