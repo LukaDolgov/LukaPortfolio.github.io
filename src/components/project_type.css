@@ -58,3 +58,32 @@
     align-self: center;
   }
   
+  /* Mobile-first adjustments for projects */
+@media (max-width: 768px) {
+  .project_content {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 92vw;            /* use the screen width */
+    gap: 12px;
+  }
+
+  .project_gif {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .project_desc {
+    padding: 12px;
+    font-size: clamp(13px, 3.8vw, 16px);
+  }
+
+  .project_head {
+    font-size: clamp(16px, 5.5vw, 22px);
+    margin-bottom: 8px;
+  }
+
+  .project_caption {
+    font-size: clamp(11px, 3.4vw, 14px);
+  }
+}

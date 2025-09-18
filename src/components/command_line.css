@@ -16,3 +16,11 @@ pre {
     color: #2f2ffb;  
   }
   
+.command-line,
+.command-output {
+  word-break: break-word;
+  overflow-wrap: anywhere;    /* break long paths/commands cleanly */
+  line-height: 1.45;
+}
+
+.prompt { margin-right: 6px; }

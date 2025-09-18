@@ -10,7 +10,7 @@ let projects_dir = "/c/Users/LukaDolgov/portfolio/portfolio_projects$ ";
 let resume_pdf = "/LukaPortfolio.github.io/Luka_Dolgov_Resume_PDF.pdf"
 //gifs
 let gif_proj1 = "/LukaPortfolio.github.io/Coinbase_gif.gif";
-let gif_proj2 = " ";
+let gif_proj2 = "/LukaPortfolio.github.io/shakespeare.png";
 let gif_proj3 = "/LukaPortfolio.github.io/sattelite_distribution.png";
 
 //commands
@@ -27,7 +27,7 @@ let c2O = (
     <div className="header">
     <span className="large-name">Luka Dolgov</span>
     <span className="small-info">
-      cell: 414-708-5494 &nbsp; gmail: luka.dolgov@gmail.com &nbsp; GitHub:{' '}
+      cell: 414-708-5494 &nbsp; gmail: luka.dolgov@yale.edu &nbsp; GitHub:{' '}
       <a href="https://github.com/LukaDolgov" target="_blank" rel="noopener noreferrer"  style={{ color: "blue" }}>
         LukaDolgov
       </a>
