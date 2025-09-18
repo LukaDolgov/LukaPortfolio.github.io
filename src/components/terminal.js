@@ -10,7 +10,8 @@ let projects_dir = "/c/Users/LukaDolgov/portfolio/portfolio_projects$ ";
 let resume_pdf = "/LukaPortfolio.github.io/Luka_Dolgov_Resume_PDF.pdf"
 //gifs
 let gif_proj1 = "/LukaPortfolio.github.io/Coinbase_gif.gif";
-let gif_proj2 = "";
+let gif_proj2 = " ";
+let gif_proj3 = "/LukaPortfolio.github.io/sattelite_distribution.png";
 
 //commands
 let c1 = "ls";
@@ -19,6 +20,7 @@ let c3 = "cat portfolio_info";
 let c4 =  "cd portfolio_projects";
 let c5 = "cat project1";
 let c6 = "cat project 2";
+let c7 = "cat project 3";
 //varaible values for outputs
 let c1O = "portfolio_name   portfolio_info   portfolio_projects";
 let c2O = (
@@ -34,8 +36,7 @@ let c2O = (
   );
 let c3O = (<p id="portfolio_info_desc"> 
   I'm an undergraduate student at Yale University class of 2028
- interested in building quantitative models, game theory model development,
-and computational AI design and modeling.
+interested in building quantitative models as well as AI design and modeling.
 In this directory, you can explore some of my work and download my resume.
   </p>);
 let c4O = "";
@@ -51,6 +52,12 @@ let c5O = <Project
  project_desc = "In this project, I use the PyTorch Machine learning library to build a transformer model that generates text in the style of shakespeare, where it is trained on a document containing all of shakespeare's playes. I use byte pair encoding for tokenization. "
  project_gif = {gif_proj2}>
  </Project>
+ let c7O = <Project
+ projectnum = "3. "
+ projecttitle = "Wealth-Index Sattelite Imaging Model"
+ project_desc = "I am currently working on building a sattellite imaging model at Yale that predicts wealth based on landsat imaging over rural and urbanized areas. I have done testing with Kenya census and wealth information."
+ project_gif = {gif_proj3}>
+ </Project>
 const calculateDirectory = (i) => {
   if (i < 4) {
       return main_dir;
@@ -61,8 +68,8 @@ const calculateDirectory = (i) => {
 
 //logic
 const Terminal = () => {
-  const [commands, setCommands] = useState([c1, c2, c3, c4, c5, c6]);
-  const content = useMemo(() => [c1O, c2O, c3O, c4O, c5O, c6O], []);
+  const [commands, setCommands] = useState([c1, c2, c3, c4, c5, c6, c7]);
+  const content = useMemo(() => [c1O, c2O, c3O, c4O, c5O, c6O, c7O], []);
   const [currIndex, setCurrIndex] = useState(0);
   const [showExtra, setShowExtra] = useState(false);
   // This index tracks the command that is currently being printed.
