@@ -54,8 +54,8 @@ let c5O = <Project
  </Project>
  let c7O = <Project
  projectnum = "3. "
- projecttitle = "Wealth-Index Sattelite Imaging Model"
- project_desc = "I am currently working on building a sattellite imaging model at Yale that predicts wealth based on landsat imaging over rural and urbanized areas. I have done testing with Kenya census and wealth information."
+ projecttitle = "Wealth-Index Satellite Imaging Model"
+ project_desc = "I am currently working on building a satellite imaging model at Yale that predicts wealth based on landsat imaging over rural and urbanized areas. I have done testing with Kenya census and wealth information."
  project_gif = {gif_proj3}>
  </Project>
 const calculateDirectory = (i) => {
