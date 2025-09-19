@@ -7,7 +7,7 @@ import './command_line.css';
 //directories
 let main_dir = "/c/Users/LukaDolgov/portfolio$ ";
 let projects_dir = "/c/Users/LukaDolgov/portfolio/portfolio_projects$ ";
-let resume_pdf = "/LukaPortfolio.github.io/Luka_Dolgov_Resume_PDF.pdf"
+let resume_pdf = "/LukaPortfolio.github.io/Luka_Dolgov_Resume.pdf"
 //gifs
 let gif_proj1 = "/LukaPortfolio.github.io/Coinbase_gif.gif";
 let gif_proj2 = "/LukaPortfolio.github.io/shakespeare.png";
