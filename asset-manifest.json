@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/LukaPortfolio.github.io/static/css/main.afdb9c30.css",
-    "main.js": "/LukaPortfolio.github.io/static/js/main.e1275c77.js",
+    "main.js": "/LukaPortfolio.github.io/static/js/main.9a5e8e76.js",
     "static/js/453.41ed0299.chunk.js": "/LukaPortfolio.github.io/static/js/453.41ed0299.chunk.js",
     "index.html": "/LukaPortfolio.github.io/index.html",
     "main.afdb9c30.css.map": "/LukaPortfolio.github.io/static/css/main.afdb9c30.css.map",
-    "main.e1275c77.js.map": "/LukaPortfolio.github.io/static/js/main.e1275c77.js.map",
+    "main.9a5e8e76.js.map": "/LukaPortfolio.github.io/static/js/main.9a5e8e76.js.map",
     "453.41ed0299.chunk.js.map": "/LukaPortfolio.github.io/static/js/453.41ed0299.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.afdb9c30.css",
-    "static/js/main.e1275c77.js"
+    "static/js/main.9a5e8e76.js"
   ]
 }
